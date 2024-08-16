@@ -24,6 +24,11 @@ function setImage(){
       $circle.setAttribute('src','./assets/bird2.png')
     }
 }
+function setImage(){
+    if(getScore() >= 1000) {
+      $circle.setAttribute('src','./assets/bird3.jpg')
+    }
+}
 
 $circle.addEventListener('click', (event) => {
     const rect = $circle.getBoundingClientRect();
