@@ -14,15 +14,15 @@ const autoClickerButton = document.querySelector('#autoClickerButton');
 const upgradeAutoClickerButton = document.querySelector('#upgradeAutoClickerButton');
 
 const upgradeLevels = [
-    { score: 1000, pointsPerClickIncrease: 1, autoClickIntervalDecrease: 20  },
-    { score: 5000, pointsPerClickIncrease: 2, autoClickIntervalDecrease: 20  },
-    { score: 10000, pointsPerClickIncrease: 3, autoClickIntervalDecrease: 20  },
-    { score: 30000, pointsPerClickIncrease: 4, autoClickIntervalDecrease: 20 },
-    { score: 50000, pointsPerClickIncrease: 5, autoClickIntervalDecrease: 20 },
-    { score: 100000, pointsPerClickIncrease: 6, autoClickIntervalDecrease: 20 },
-    { score: 500000, pointsPerClickIncrease: 7, autoClickIntervalDecrease: 20 },
-    { score: 1000000, pointsPerClickIncrease: 10, autoClickIntervalDecrease: 20 },
-    { score: 5000000, pointsPerClickIncrease: 15, autoClickIntervalDecrease: 20 },
+    { score: 1000, pointsPerClickIncrease: 0, autoClickIntervalDecrease: 20  },
+    { score: 5000, pointsPerClickIncrease: 0, autoClickIntervalDecrease: 20  },
+    { score: 10000, pointsPerClickIncrease: 0, autoClickIntervalDecrease: 20  },
+    { score: 30000, pointsPerClickIncrease: 0, autoClickIntervalDecrease: 20 },
+    { score: 50000, pointsPerClickIncrease: 1, autoClickIntervalDecrease: 20 },
+    { score: 100000, pointsPerClickIncrease: 1, autoClickIntervalDecrease: 20 },
+    { score: 500000, pointsPerClickIncrease: 1, autoClickIntervalDecrease: 20 },
+    { score: 1000000, pointsPerClickIncrease: 1, autoClickIntervalDecrease: 20 },
+    { score: 5000000, pointsPerClickIncrease: 1, autoClickIntervalDecrease: 20 },
 ];
 
 const requiredScoreForAutoClicker = 1000;
