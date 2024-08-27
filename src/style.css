@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1f24;
+    width: 100%;
+    height: 100%;
+    font-family: "Inter", system-ui;
+}
+
+.header>img {
+    width: 50px;
+    height: 50px;
+    margin-right: 14px;
+    user-select: none;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.circle {
+    position: relative;
+
+}
+.circle img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 16px 0px rgba(123, 143, 254, .5);
+    transition: transform 0.2 ease;
+    --tiltX: 0deg;
+    --tiltY: 0deg;
+    transform: rotateX(var(--tiltX)) rotateY(var(--tiltY));
+    user-select: none;
+    margin: auto;
+    margin-left: 5px;
+}
+.score {
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    user-select: none;
+    
+}
+.game {
+    margin-top: 200px;
+    width: 210px;
+}
+
+.plus-one {
+    position: absolute;
+    font-family: Inter;
+    text-shadow: 0px 0px 4px rgba(234, 182,64 , 0.25);
+    font-size: 24px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #e8c547 0%, #ef882b 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    pointer-events: none;
+    user-select: none;
+    animation: move-up 2s forwards;
+}
+.upgrade {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#upgradeButton {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50; /* Зеленый цвет кнопки */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+  top: 550px;
+  left: 100px;
+}
+
+#upgradeButton:hover {
+    background-color: #45a049; /* Темно-зеленый при наведении */
+    transform: scale(1.05);
+}
+
+#upgradeButton:active {
+    background-color: #388E3C; /* Более темный зеленый при нажатии */
+    transform: scale(0.98);
+}
+
+#upgradeIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px; /* Отступ между иконкой и текстом */
+}
+
+#upgradeText {
+    margin-right: 8px;
+}
+
+#upgradeCost {
+    color: #ffcc00; 
+    font-size: 16px;
+}
+
+
+#upgradeButton:hover {
+    background-color: #45a049; 
+    transform: scale(1.05);
+}
+
+#upgradeButton:active {
+    background-color: #388E3C;
+    transform: scale(0.98);
+}
+#pointsPerClick{
+    font-size: 18px;
+    margin: 0;
+    color: #ffffff;
+}
+.upgrade>p{
+    font-size: 18px;
+    margin: 0;
+    color: #ffffff;
+    position: absolute;
+    left: 110px;
+    top: 300px;
+}
+#autoClickerButton {
+    background-color: #4CAF50; /* Зеленый фон */
+    border: none; /* Убираем рамку */
+    color: white; /* Белый текст */
+    padding: 15px 32px; /* Внутренние отступы */
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    display: inline-block; /* Отображение кнопки как встроенный блок */
+    font-size: 16px; /* Размер шрифта */
+    margin: 4px 2px; /* Внешние отступы */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    border-radius: 12px; 
+    transition: background-color 0.3s ease; 
+    position: absolute;
+    top: 698px;
+    left: 150px;
+}
+#autoClickerButton>img {
+    width: 34px;
+    height: 34px;
+    margin-right: 8px;
+}
+
+
+button:hover {
+    background-color: #45a049; 
+    transform: scale(1.05);
+}
+Button:active {
+    background-color: #388E3C; 
+    transform: scale(0.98);
+    
+}
+#upgradeAutoClickerButton{
+    background-color: #4CAF50; /* Зеленый фон */
+    border: none; /* Убираем рамку */
+    color: white; /* Белый текст */
+    padding: 15px 32px; /* Внутренние отступы */
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    display: inline-block; /* Отображение кнопки как встроенный блок */
+    font-size: 16px; /* Размер шрифта */
+    margin: 4px 2px; /* Внешние отступы */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    border-radius: 12px; /* Закругленные углы */
+    transition: background-color 0.3s ease; 
+    position: absolute;
+    width: 250px;
+    top: 620px;
+    left: 80px;
+}
+#upgradeAutoClickerButton:hover {
+    background-color: #45a049; /* Изменение фона при наведении */
+    transform: scale(1.05);
+}
+#upgradeAutoClickerButton:active {
+    background-color: #388E3C; /* Еще более темный зеленый при нажатии */
+    transform: scale(0.98);
+    
+}
+
+
+
+
+
+@keyframes move-up {
+    0%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+
+
+  @media only screen and (max-width: 600px ) {
+    .upgrade>#upgradeButton{
+        left: 60px;
+    }
+   
+    .score{
+        font-size: 20;
+    }
+    .upgrade>p{
+        top: 280px;
+        left: 100px;
+    }
+
+  
+    
+} 
